@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8"> <!-- Define o padrão de codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+    <meta name="description" content="Farmácia Vida Viva - Cuidando da sua saúde com produtos de qualidade.">
+    <title>Farmácia Vida Viva</title>
+
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Fonte personalizada do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Ícone que aparece na aba do navegador -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Logo e nome da farmácia -->
+        <a href="#inicio" class="logo">
+            <img src="assets/images/logo.png" alt="Logo da Farmácia Vida Viva">
+            <h1>Farmácia Vida Viva</h1>
+        </a>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção de boas-vindas -->
+        <section id="inicio" class="inicio">
+            <h2>Bem-vindo à Farmácia Vida Viva</h2>
+            <p>Cuidando da sua saúde com produtos de qualidade e atendimento de confiança.</p>
+
+            <!-- Contador de promoção -->
+            <div class="ultimas-horas">
+                <div>
+                    <h3>Últimas Horas!</h3>
+                    <p>Use o cupom <strong>VIDAVIVA15</strong> para descontos de até 15% em compras acima de R$200 em todo site!</p>
+                </div>
+                <div id="contador">
+                    <!-- Contadores de horas, minutos e segundos -->
+                    <div class="tempo">
+                        <span id="horas">00</span>
+                        <p >Horas</p>
+                    </div>
+                    <div class="tempo">
+                        <span id="minutos">00</span>
+                        <p >Minutos</p>
+                    </div>
+                    <div class="tempo">
+                        <span id="segundos">00</span>
+                        <p >Segundos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de produtos -->
+        <section id="produtos" class="produtos">
+            <h1>Nossos Produtos</h1>
+
+            <!-- Carrossel de produtos -->
+            <div class="carrossel">
+                <!-- Botão para mover o carrossel à esquerda -->
+                <button class="seta esquerda" onclick="moverCarrossel(-1)">&#10094;</button>
+
+                <!-- Lista de produtos -->
+                <div class="carrossel-container" id="carrossel">
+                    <div class="produto">
+                        <img src="assets/images/produto1.jpg" alt="Vitaminas">
+                        <h2>Vitaminas</h2>
+                        <p>Suplementos vitamínicos para sua saúde.</p>
+                    </div>
+                    <div class="produto">
+                        <img src="assets/images/produto2.jpg" alt="Termômetros">
+                        <h2>Termômetros</h2>
+                        <p>Dispositivos para monitorar sua temperatura.</p>
+                    </div>
+                    <div class="produto">
+                        <img src="assets/images/produto3.jpg" alt="Primeiros Socorros">
+                        <h2>Primeiros Socorros</h2>
+                        <p>Kit essencial para emergências.</p>
+                    </div>
+                    <div class="produto">
+                        <img src="assets/images/produto4.jpg" alt="Medidor de Pressão">
+                        <h2>Medidor de Pressão</h2>
+                        <p>Acompanhe sua pressão arterial em casa.</p>
+                    </div>
+                    <div class="produto">
+                        <img src="assets/images/produto5.jpg" alt="Medicamentos">
+                        <h2>Medicamentos</h2>
+                        <p>Produtos para tratamento e prevenção.</p>
+                    </div>
+                    <div class="produto">
+                        <img src="assets/images/produto6.jpg" alt="Perfumaria">
+                        <h2>Perfumaria</h2>
+                        <p>Produtos de beleza e cuidados pessoais.</p>
+                    </div>
+                </div>
+
+                <!-- Botão para mover o carrossel à direita -->
+                <button class="seta direita" onclick="moverCarrossel(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Seção sobre a farmácia -->
+        <section id="sobre" class="sobre">
+            <h1>Sobre Nós</h1>
+            <div class="sobre-content">
+                <!-- Imagem e descrição da farmácia -->
+                <img src="assets/images/sobre.jpg" alt="Farmácia Vida Viva">
+                <p>A Farmácia Vida Viva nasceu com o propósito de oferecer mais do que medicamentos: proporcionar cuidado e atenção para nossos clientes. Com mais de uma década de história, nossa farmácia se consolidou como referência na comunidade local, oferecendo não apenas produtos de qualidade, mas também confiança e segurança.</p>
+                <p>Contamos com uma equipe altamente capacitada e apaixonada pelo que faz, pronta para oferecer o melhor atendimento. Nossa missão é garantir que sua saúde e bem-estar sejam sempre nossa prioridade.</p>
+            </div>
+        </section>
+
+        <!-- Seção de serviços -->
+        <section id="servicos">
+            <div class="destaque-servicos">
+                <h3>Nossos Serviços</h3>
+                <ul>
+                    <li>Entrega rápida de medicamentos</li>
+                    <li>Teste de glicemia e pressão arterial</li>
+                    <li>Orientação farmacêutica especializada</li>
+                    <li>Produtos de perfumaria e beleza</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção de contato -->
+        <section id="contato" class="contato">
+            <h1>Contato</h1>
+            <div class="contato-content">
+                <!-- Informações de contato -->
+                <div class="info">
+                    <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                    <p><strong>WhatsApp:</strong> (11) 9876-5432</p>
+                    <p><strong>Endereço:</strong> Rua Saúde, 123 - Centro, São Paulo </p>
+                    <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank">@farmaciavidaviva</a></p>
+                </div>
+
+                <!-- Mapa do local -->
+                <h1>Como Chegar</h1>
+               
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345964413!2d144.9537353153169!3d-37.81621897975185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577b6c69776d1e9!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1595932051162!5m2!1sen!2sau"
+                        width="600px" height="300px" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Farmácia Vida Viva | Todos os direitos reservados &copy </p>
+    </footer>
+
+    <!-- Script JavaScript separado está no arquivo 'scripts.js' -->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>

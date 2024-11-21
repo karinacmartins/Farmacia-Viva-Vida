@@ -1,0 +1,467 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+
+}
+
+section {
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #00aaffc9;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ffdd00;
+}
+
+.inicio {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #e0f7ff;
+    color: #333;
+}
+
+.inicio h2 {
+    font-size: 2rem;
+    color: #0077cc;
+    text-align: center;
+}
+
+.inicio p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+
+}
+
+/* Destaque de Serviços */
+.destaque-servicos {
+    margin-top: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destaque-servicos h3 {
+    color: #0077cc;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.destaque-servicos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.destaque-servicos li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilo do contador Últimas Horas */
+.ultimas-horas {
+    margin: 20px;
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #770f0f, #e44848);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ultimas-horas h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.ultimas-horas strong {
+    font-size: 1.2rem;
+    background-color: #00000050;
+    border: #666 solid 1px;
+    border-radius: 5px;
+    padding: 2px;
+    
+}
+
+.ultimas-horas p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+#contador {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 5px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 0.8rem;
+}
+
+.tempo span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Setas do Carrossel */
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+.carrossel-container {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Produtos */
+
+.produto {
+    flex: 0 0 20%;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    height: 250px;
+    /* Tamanho fixo para imagens uniformes */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.produtos h1 {
+    font-size: 2rem;
+    color: #0055aa;
+    text-align: center;
+}
+
+.produto h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+.produto p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 15px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.seta.esquerda {
+    left: 10px;
+}
+
+.seta.direita {
+    right: 10px;
+}
+
+
+
+
+/* Sobre */
+.sobre {
+    background-color: #f0f8ff;
+
+}
+
+.sobre h1 {
+    font-size: 2rem;
+    color: #0055aa;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-content img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.sobre-content p {
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 800px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Contato */
+.contato {
+    background-color: #e6f7ff;
+}
+
+.contato h1 {
+    font-size: 2rem;
+    color: #0077cc;
+    text-align: center;
+}
+
+.contato-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato-content .info {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.contato-content .info a {
+    color: #0055aa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contato-content .info a:hover {
+    color: #ff5500;
+}
+
+
+
+/* Rodapé */
+footer {
+    background-color: #0055aa;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    .logo {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+        /* Diminui o tamanho do título */
+        margin-top: 5px;
+        /* Ajusta o espaçamento superior */
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Seções */
+    section {
+        padding-top: 320px;
+        /* Aumenta o padding-top das seções */
+    }
+
+    .ultimas-horas {
+        flex-direction: column;
+
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Produtos */
+    .produto {
+        flex: 0 0 45%;
+        /* Ajusta a largura dos produtos para caberem melhor */
+    }
+
+    .carrossel-container {
+        gap: 5px;
+    }
+
+    .seta {
+        font-size: 1.5rem;
+        /* Reduz o tamanho das setas no carrossel */
+    }
+
+    /* Sobre */
+    .sobre-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sobre-content img {
+        max-width: 100%;
+        /* Imagem ocupa todo o espaço disponível */
+    }
+
+    .sobre-content p {
+        font-size: 0.9rem;
+        /* Reduz o tamanho do texto */
+        padding: 0 10px;
+        /* Adiciona espaçamento interno para evitar que o texto encoste nas bordas */
+    }
+
+    /* Contato */
+    .contato-content {
+        gap: 15px;
+    }
+
+    .contato-content .info {
+        font-size: 0.9rem;
+        /* Reduz o texto para melhor leitura */
+        padding: 0 10px;
+        /* Adiciona espaçamento interno */
+    }
+
+    iframe {
+        max-width: 100%;
+        /* Garante que o iframe ocupe o espaço disponível */
+        height: 200px;
+        /* Ajusta a altura do mapa */
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 0.8rem;
+        /* Ajusta o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajustes adicionais para telas ainda menores */
+    .logo h1 {
+        font-size: 1.5rem;
+        /* Diminui mais o título */
+    }
+
+    .produto {
+        flex: 0 0 100%;
+        /* Produtos ocupam toda a largura */
+    }
+
+    .ultimas-horas h3 {
+        font-size: 1rem;
+        /* Reduz o tamanho do texto */
+    }
+
+    .ultimas-horas p {
+        font-size: 0.8rem;
+        /* Reduz o texto do cupom */
+    }
+
+    iframe {
+        height: 150px;
+        /* Reduz altura do iframe para dispositivos menores */
+    }
+}
