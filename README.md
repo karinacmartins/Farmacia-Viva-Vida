@@ -15,6 +15,7 @@ Bem-vindo ao repositório da Farmácia Vida Viva! Este é um projeto desenvolvid
 - Funcionalidades Futuras
 - Contribuições
 - Contato
+- Relatório do Projeto
 - Observações
 
 ## 🎯 Objetivo
@@ -31,7 +32,8 @@ O site "Farmácia Vida Viva" foi desenvolvido para ser uma plataforma acessível
 ## 🕹️ Como Utilizar
 
 1. **Acessar a Página**:
-   - Acesse a aplicação hospedada clicando [aqui](https://farmaciavivavida.vercel.app).
+   - Acesse a aplicação hospedada clicando [aqui](https://farmacia-viva-vida.vercel.app/).  
+     *Dica: Clique com o botão direito do mouse e selecione "Abrir em uma nova guia".*
    - Ou abra o arquivo `index.html` localmente no navegador para visualização offline.
 
 2. **Interaja com a Navegação**:
@@ -76,8 +78,10 @@ A organização dos arquivos no projeto é a seguinte:
 
 ## 🌟 Funcionalidades Futuras
 
-- Transforma o site para que funcione como e-commerce
+- Transformar o site em e-commerce.
 - Implementar sistema de busca de produtos.
+- Pagina de cadastro do cliente.
+- Separar produtos por categorias.
 - Adicionar funcionalidade de carrinho de compras.
 - Integrar com sistemas de pagamento online.
 
@@ -96,6 +100,15 @@ Para dúvidas ou feedback, entre em contato:
 - **E-mail:** [nina.kastro@icloud.com](mailto:nina.kastro@icloud.com)
 - **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/karinacmartins/)
 - **GitHub:** [GitHub](https://github.com/karinacmartins)
+
+## 📄 Relatório do Projeto
+
+O relatório enviado para a faculdade pode ser acessado através do link abaixo:
+
+- [Relatório do Projeto](https://docs.google.com/document/d/1D99fIHAGojnhCCiyBkmwaXGxENVMJVkA/edit?usp=drive_link&ouid=116413050875749529271&rtpof=true&sd=true)
+
+Este documento detalha a situação-problema, os objetivos, as soluções aplicadas e os aprendizados adquiridos durante o desenvolvimento deste projeto.
+
 
 ## Observações
 
