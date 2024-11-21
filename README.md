@@ -32,7 +32,8 @@ O site "Farmácia Vida Viva" foi desenvolvido para ser uma plataforma acessível
 ## 🕹️ Como Utilizar
 
 1. **Acessar a Página**:
-   - Acesse a aplicação hospedada clicando [aqui](https://farmaciavivavida.vercel.app).
+   - Acesse a aplicação hospedada clicando [aqui](https://farmacia-viva-vida.vercel.app/).  
+     *Dica: Clique com o botão direito do mouse e selecione "Abrir em uma nova guia".*
    - Ou abra o arquivo `index.html` localmente no navegador para visualização offline.
 
 2. **Interaja com a Navegação**:
